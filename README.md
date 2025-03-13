@@ -1,2 +1,2 @@
-# scrappy-community
+# Scrappy Community
 Community-made templates for Scrappy/Skyscraper
