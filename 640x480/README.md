@@ -14,7 +14,7 @@
 
 | **Preview** | **Details** |
 |-------------|------------|
-| <img src="previews/Arcade-machine.png" width="320"> | **Template**: Arcade Machine <br> **Author**: joyrider3774 <br> **Date of Submission**: 2025-03-17 <br> **Download**: [Arcade-machine.zip](files/Arcade-machine.zip) <br><br> ![BOX](https://img.shields.io/static/v1?label=&message=BOX&color=%23EDD113&style=for-the-badge) <br> |
+| <img src="previews/Arcade-machine.png" width="320"> | **Template**: Arcade Machine <br> **Author**: joyrider3774 <br> **Description**: Displays screenshots and wheels as an arcade machine. Requires Scrappy version >= 2.3.0 <br> **Date of Submission**: 2025-03-29 <br> **Download**: [Arcade-machine.zip](files/Arcade-machine.zip) <br><br> ![BOX](https://img.shields.io/static/v1?label=&message=BOX&color=%23EDD113&style=for-the-badge) <br> |
 
 
 | **Preview** | **Details** |
