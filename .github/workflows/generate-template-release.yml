@@ -44,5 +44,5 @@ jobs:
           gh release create $TAG_NAME \
             templates.json \
             previews.zip \
-            --title "Templates Release $TAG_NAME" \
+            --title "$TAG_NAME" \
             --generate-notes
