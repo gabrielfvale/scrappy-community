@@ -1,0 +1,48 @@
+name: Generate Template Release
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  generate-release:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.merged)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Generate release assets
+        run: |
+          python process_templates.py
+
+      - name: Get timestamp
+        id: timestamp
+        run: echo "timestamp=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_OUTPUT
+
+      - name: Create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Create timestamp-based tag
+          TAG_NAME="release-$(date +'%Y.%m.%d')"
+          git tag $TAG_NAME
+          git push origin $TAG_NAME
+
+          # Create release with assets
+          gh release create $TAG_NAME \
+            templates.json \
+            previews.zip \
+            --title "Templates Release $TAG_NAME" \
+            --generate-notes
