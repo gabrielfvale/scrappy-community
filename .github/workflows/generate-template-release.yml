@@ -36,7 +36,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Create timestamp-based tag
-          TAG_NAME="release-$(date +'%Y.%m.%d')"
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          TAG_NAME="release-$(date +'%Y.%m.%d')-$SHORT_SHA"
           git tag $TAG_NAME
           git push origin $TAG_NAME
 
