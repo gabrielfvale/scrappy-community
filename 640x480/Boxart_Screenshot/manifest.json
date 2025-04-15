@@ -1,0 +1,7 @@
+{
+  "name": "boxart + screenshot",
+  "author": "joyrider3774",
+  "submission": "2025-03-29",
+  "outputs": ["box"],
+  "description": "Displays Boxart and screenshot always centered and keeping aspect ratio. Requires Scrappy version >= 2.3.0"
+}

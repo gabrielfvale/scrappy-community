@@ -1,0 +1,7 @@
+{
+  "name": "Wheel Screenshot Window",
+  "author": "elav (ported from jdcross)",
+  "submission": "2025-03-14",
+  "outputs": ["box"],
+  "description": "Displays wheels inside a vertical screenshot window."
+}

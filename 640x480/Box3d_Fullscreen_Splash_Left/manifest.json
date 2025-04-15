@@ -1,0 +1,7 @@
+{
+  "name": "Box3d Fullscreen Splash Left",
+  "author": "ngencokamin",
+  "submission": "2025-03-21",
+  "outputs": ["box", "preview", "splash"],
+  "description": "Profile for themes with the gamelist on the right. Includes 3D Box Art, Preview, Game Cartridge/Disc, and Fullscreen Splash on launch."
+}

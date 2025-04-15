@@ -1,0 +1,7 @@
+{
+  "name": "Arcade Machine",
+  "author": "joyrider3774",
+  "submission": "2025-03-29",
+  "outputs": ["box"],
+  "description": "Displays screenshots and wheels as an arcade machine. Requires Scrappy version >= 2.3.0"
+}
