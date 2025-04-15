@@ -3,8 +3,20 @@
 Please use this template to submit a single artwork for Scrappy. Fill out the details and provide a preview of your artwork.
 
 ### Instructions:
-- Replace the placeholder image with the actual image URL for the preview.
-- Enter the artwork name where indicated.
+- Create a new folder in the desired resolution directory, using underscores instead of spaces.
+- Add the template zip and preview, named **exactly** `template.zip` and `preview.png`
+- Add a `manifest.json` file with the following structure:
+  ```json
+  {
+    "name": "Your Template Name",
+    "author": "Your username",
+    "date": "YYYY-MM-DD",
+    "description": "A short description of your template",
+    "outputs": ["box", "splash", "preview"]
+  }
+  ```
+
+### Optional README
 - Remove/keep the appropriate badges for `Box`, `Splash`, and `Preview` to indicate which types of artwork your template outputs.
 - Ensure your artwork meets the required specifications for the selected sections before submitting.
 
