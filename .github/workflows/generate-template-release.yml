@@ -43,7 +43,6 @@ jobs:
 
           # Create release with assets
           gh release create $TAG_NAME \
-            templates.json \
-            previews.zip \
+            templates.zip \
             --title "$TAG_NAME" \
             --generate-notes
